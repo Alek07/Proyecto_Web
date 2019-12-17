@@ -30,6 +30,14 @@
                 justify-content: center;
             }
 
+            .background {
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-image:url('/assets/img/utp_bg.jpg');
+                opacity: 0.5;
+            }
+
             .position-ref {
                 position: relative;
             }
@@ -64,6 +72,7 @@
         </style>
     </head>
     <body>
+        <!-- <div class="background"></div> -->
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
