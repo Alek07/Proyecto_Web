@@ -23,6 +23,13 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Installation
 
+### Requires
+
+- Composer
+- NodeJS
+- PHP 7.2+
+- Laravel
+
 Before testing
 
 - Move to the project directory.
