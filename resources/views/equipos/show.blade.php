@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-end">
-            <button onclick="location.href='{{action('EquipoController@index')}}'"
+            <button onclick="location.href='{{url()->previous()}}'"
                     type="button" class="btn btn-secondary btn-lg">Regresar</button>
         </div>
         <div class="row mt-5">
