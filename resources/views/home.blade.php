@@ -1,24 +1,41 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
+<br>
+<h1 class="text-center">Bienvenidos al Sistema de Control de Inventario!</h1>
+<hr>
+<br>
+<div class="container">
     <div class="row">
         <div class="col-md-4">
-            <div class="card h-100">
-                <div class="card-header">
-                    Dashboard
-                </div>
+            <div class="card" onclick="location.href='{{action('EquipoController@index')}}'">
+                <img src="/assets/img/equipos.jpg" class="card-img-top" alt="Equipos_Image">
                 <div class="card-body">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Equipos</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profesores</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Ubicaciones</a>
+                    <p class="card-text">Equipos</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="card" onclick="location.href=''">
+                <img src="/assets/img/encargado.jpg" class="card-img-top" alt="Encargados_Image">
+                <div class="card-body">
+                    <p class="card-text">Profesores / Encargados</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-4">
+            <div class="card" onclick="location.href=''">
+                <img src="/assets/img/fachada_utp.jpg" class="card-img-top" alt="Sede_Image">
+                <div class="card-body">
+                    <p class="card-text">Ubicaciones / Sedes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+<!-- <div class="card">
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
@@ -30,8 +47,4 @@
 
                     You are logged in!
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+            </div> -->
