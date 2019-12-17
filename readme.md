@@ -28,7 +28,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - Composer
 - NodeJS
 - PHP 7.2+
-- Laravel
+- Laravel 5.8
 
 ### Before testing
 
