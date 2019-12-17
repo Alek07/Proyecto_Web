@@ -30,7 +30,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - PHP 7.2+
 - Laravel
 
-Before testing
+### Before testing
 
 - Move to the project directory.
 - Run command on terminal *composer install*.
