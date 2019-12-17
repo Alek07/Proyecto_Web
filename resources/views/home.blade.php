@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" onclick="location.href=''">
+            <div class="card" onclick="location.href='{{action('UbicacionesController@index')}}'">
                 <img src="/assets/img/fachada_utp.jpg" class="card-img-top" alt="Sede_Image">
                 <div class="card-body">
                     <p class="card-text">Ubicaciones / Sedes</p>
