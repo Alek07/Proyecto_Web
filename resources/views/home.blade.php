@@ -6,7 +6,7 @@
 <hr>
 <br>
 <div class="container mt-5">
-    <div class="row">
+    <div class="row bg-primary p-4 rounded">
         <div class="col-md-4">
             <div class="card" style="cursor: pointer" onclick="location.href='{{action('EquipoController@index')}}'">
                 <img src="/assets/img/equipos.jpg" class="card-img-top" alt="Equipos_Image">

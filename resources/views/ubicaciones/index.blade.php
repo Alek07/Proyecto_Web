@@ -29,7 +29,7 @@
                             @endif
                         @endforeach
                                 <div class="card-body">
-                                    <table class="table table-hover">
+                                    <table class="table table-hover shadow p-3 mb-5 bg-white">
                                         <tbody>
                                             @foreach($sede as $info)
                                                 <tr onclick="location.href='{{action('EquipoController@show', $info->id)}}'" style="cursor: pointer">

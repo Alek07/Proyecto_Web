@@ -7,7 +7,7 @@
                     type="button" class="btn btn-secondary btn-lg">Regresar</button>
         </div>
         <div class="row mt-5">
-            <div class="card">
+            <div class="card shadow p-3 mb-5 bg-white">
                 <div class="card-header bg-primary">
                     <h1 class="display-4 text-left text-white">{{$equipos['nombre']}}</h1>
                 </div>
@@ -40,8 +40,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <img src="/assets/img/equipos.jpg" alt="">
+                            <div class="col d-flex justify-content-center">
+                                <img class="shadow p-3 mb-5 bg-white rounded" src="/assets/img/equipos.jpg" alt="">
                             </div>
                         </div>
                         @auth

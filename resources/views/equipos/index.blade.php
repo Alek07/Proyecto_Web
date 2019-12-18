@@ -32,7 +32,7 @@
                 <h1 class="text-center">Equipos</h1>
                 <hr>
                 <br>
-                <table class="table table-hover">
+                <table class="table table-hover shadow p-3 mb-5 bg-white">
                     <thead class="bg-primary text-white">
                         <tr>
                         <th scope="col">Nombre</th>

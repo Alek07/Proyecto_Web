@@ -27,7 +27,7 @@
                     </div>
                     <div id="{{$idTarget = str_replace(' ', '', $profesor->full_name)}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            <table class="table table-hover">
+                            <table class="table table-hover shadow p-3 mb-5 bg-white">
                                 <tbody>
                                 @foreach($equipos as $eqKey => $data)
                                     @if($eqKey == $pfKey)
