@@ -11,7 +11,7 @@
         <div class="accordion" id="accordionExample">
             <div class="card">
                 @foreach($data as $sedes => $val)
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" style="cursor: pointer" id="headingOne">
                         <h1 class="mb-0">
                         @foreach($sedeValues as $key => $value)
                             @if($sedes == $key)

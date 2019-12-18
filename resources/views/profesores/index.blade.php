@@ -11,7 +11,7 @@
         <div class="accordion" id="accordionExample">
             <div class="card">
                 @foreach($profesores as $pfKey => $profesor)
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" style="cursor: pointer" id="headingOne">
                         <h1 class="mb-0">
                             <div data-toggle="collapse" data-target="{{$target = str_replace(' ', '', '#'.$profesor->full_name)}}" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="row">
