@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Equipos;
 
+use App\Http\Middleware\Authenticate;
+
 class EquipoController extends Controller
 {
     /**
@@ -13,6 +15,11 @@ class EquipoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+    
     public function index()
     {
         $equipos = Equipos::all()->toArray();

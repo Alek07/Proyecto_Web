@@ -2,9 +2,11 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-end">
-            <button onclick="location.href='{{action('EquipoController@create')}}'" type="button" class="btn btn-primary btn-lg">Agregar Equipo</button>
-        </div>
+        @auth
+            <div class="row justify-content-end">
+                <button onclick="location.href='{{action('EquipoController@create')}}'" type="button" class="btn btn-primary btn-lg">Agregar Equipo</button>
+            </div>
+        @endauth
         @if($message = Session::get('success'))
         <div class="alert alert-success mt-3 alert-dismissible fade show">
             <p>{{$message}}</p>

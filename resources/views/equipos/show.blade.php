@@ -44,12 +44,14 @@
                                 <img src="/assets/img/equipos.jpg" alt="">
                             </div>
                         </div>
-                        <div class="row justify-content-center mt-5">
-                            <div onclick="location.href='{{action('EquipoController@edit', $equipos['id'])}}'" class="btn btn-primary btn-lg">Editar</div>
-                            <div class="pl-3">
-                                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModal">Eliminar</button>
+                        @auth
+                            <div class="row justify-content-center mt-5">
+                                <div onclick="location.href='{{action('EquipoController@edit', $equipos['id'])}}'" class="btn btn-primary btn-lg">Editar</div>
+                                <div class="pl-3">
+                                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModal">Eliminar</button>
+                                </div>
                             </div>
-                        </div>
+                        @endauth
                     </div>
                 </div>
             </div>
