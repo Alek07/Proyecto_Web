@@ -61,12 +61,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .background{
+                background-color
+            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-                <div class="top-right links">
-                        <a href="{{ url('/home') }}">Inicio</a>
+        <div class="flex-center position-ref full-height background">
+                <div class="top-right links" class="background">
+                        <a href="{{ url('/home') }}" class="">Inicio</a>
                         @guest
                             <a href="{{ route('login') }}">Iniciar Sesion</a>
 

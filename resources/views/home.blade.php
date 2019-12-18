@@ -2,7 +2,7 @@
 
 @section('content')
 <br>
-<h1 class="text-center">Bienvenidos al Sistema de Control de Inventario!</h1>
+<h1 class="text-center">Bienvenidos al Sistema de Control de Inventario</h1>
 <hr>
 <br>
 <div class="container mt-5">

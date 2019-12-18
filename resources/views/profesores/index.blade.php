@@ -16,10 +16,10 @@
                             <div data-toggle="collapse" data-target="{{$target = str_replace(' ', '', '#'.$profesor->full_name)}}" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="row">
                                     <div class="col">
-                                        {{$profesor->full_name}}
+                                        <h3>{{$profesor->full_name}}</h3>
                                     </div>
                                     <div class="col">
-                                        {{$profesor->cedula}}
+                                        <h3>{{$profesor->cedula}}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -32,10 +32,10 @@
                                 @foreach($equipos as $eqKey => $data)
                                     @if($eqKey == $pfKey)
                                         @foreach($data as $equipo)
-                                            <tr onclick="location.href='{{action('EquipoController@show', $equipo->id)}}'">
-                                                <td>{{$equipo->nombre}}</td>
-                                                <td>{{$equipo->code}}</td>
-                                                <td>{{$equipo->sede_nombre}}</td>
+                                            <tr onclick="location.href='{{action('EquipoController@show', $equipo->id)}}'" style="cursor: pointer">
+                                                <td class="h4">{{$equipo->nombre}}</td>
+                                                <td class="h4">{{$equipo->code}}</td>
+                                                <td class="h4">{{$equipo->sede_nombre}}</td>
                                                 @if($equipo->availability == 1)
                                                     <td>
                                                         <h4>
