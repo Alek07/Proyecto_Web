@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" onclick="location.href=''">
+            <div class="card" onclick="location.href='{{action('ProfesoresController@index')}}'">
                 <img src="/assets/img/encargado.jpg" class="card-img-top" alt="Encargados_Image">
                 <div class="card-body">
                     <p class="card-text">Profesores / Encargados</p>

@@ -14,7 +14,7 @@ class AddForeignKeysToEquiposTable extends Migration {
 	{
 		Schema::table('equipos', function(Blueprint $table)
 		{
-			$table->foreign('persona', 'id_persona')->references('id')->on('personas')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('persona', 'id_persona')->references('cedula')->on('personas')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 			$table->foreign('sede', 'id_sede')->references('id')->on('sedes')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}

@@ -36,7 +36,6 @@
                                                     <td>{{$info->nombre}}</td>
                                                     <td>{{$info->code}}</td>
                                                     <td>{{$info->persona}}</td>
-                                                    <td>{{$info->sede_nombre}}</td>
                                                     @if($info->availability == 1)
                                                         <td>
                                                             <h4>
