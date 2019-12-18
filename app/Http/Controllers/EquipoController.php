@@ -22,7 +22,7 @@ class EquipoController extends Controller
     
     public function index()
     {
-        $equipos = Equipos::all()->toArray();
+        $equipos = Equipos::paginate(8);
 
         $sedeValues = [
             "1" => "Azuero",
