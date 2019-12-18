@@ -19,7 +19,7 @@ class CreateEquiposTable extends Migration {
 			$table->string('nombre', 60)->nullable();
 			$table->boolean('availability')->nullable();
 			$table->integer('sede')->index('id_sede');
-			$table->integer('persona')->index('id_persona');
+			$table->string('persona')->index('id_persona');
 			$table->string('descripcion', 500)->nullable();
 		});
 	}
