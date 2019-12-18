@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="equipoPersona">Encargado</label>
-                                    <input type="text" name="persona" class="form-control" placeholder="Persona">
+                                    <input type="text" name="persona" class="form-control" placeholder="Introduzca la cedula del encargado (0-000-0000)">
                                     </div>
                                     <div class="form-group">
                                         <label for="equipoDescripcion">Descripcion</label>
