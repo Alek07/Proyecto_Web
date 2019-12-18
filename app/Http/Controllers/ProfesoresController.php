@@ -7,14 +7,20 @@ use Illuminate\Support\Facades\DB;
 
 class ProfesoresController extends Controller
 {
+    /**
+     * Controlador para la tabla personas
+     */
     public function index()
     {
+        //Inicializando variable para almacenar datos estraidos de la DB.
         $profesores = DB::table('personas')
         ->select('full_name', 'cedula')
         ->get();
 
+        //Variable temporal para almacenar equipos filtrados.
         $equipos = [];
 
+        //FIltro para obtener los equipos en relacion con una persona.
         foreach($profesores as $persona){
             $temp =  DB::table('equipos')
             ->join('personas', 'personas.cedula', 'equipos.persona')

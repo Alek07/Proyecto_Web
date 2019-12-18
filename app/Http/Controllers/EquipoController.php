@@ -24,6 +24,7 @@ class EquipoController extends Controller
     {
         $equipos = Equipos::paginate(8);
 
+        //Arreglo auxiliar para control de los nombres de las sedes.
         $sedeValues = [
             "1" => "Azuero",
             "2" => "Bocas del Toro",
@@ -89,6 +90,7 @@ class EquipoController extends Controller
     {
         $equipos = Equipos::find($id);
 
+        //Arreglo auxiliar para control de los nombres de las sedes.
         $sedeValues = [
             "1" => "Azuero",
             "2" => "Bocas del Toro",
@@ -113,6 +115,7 @@ class EquipoController extends Controller
     {
         $equipos = Equipos::find($id);
 
+        //Arreglo auxiliar para control de los nombres de las sedes.
         $sedeValues = [
             "1" => "Azuero",
             "2" => "Bocas del Toro",
@@ -136,6 +139,7 @@ class EquipoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        //Validacion de los campos de la vista editar.
         $this->validate($request, [
             'code' => 'required', 
             'nombre' => 'required', 
@@ -147,6 +151,7 @@ class EquipoController extends Controller
 
         $equipo = Equipos::find($id);
 
+        //Asignacion de nuevos valores a las variables de la tabla equipos.
         $equipo->code = $request->get('code');
         $equipo->nombre = $request->get('nombre');
         $equipo->availability = $request->get('availability');
@@ -154,6 +159,7 @@ class EquipoController extends Controller
         $equipo->persona = $request->get('persona');
         $equipo->descripcion = $request->get('descripcion');
 
+        //Guardar cambios.
         $equipo->save();
         return redirect()->route('equipos.index')->with('success', 'Equipo Actualizado');
     }
@@ -168,6 +174,7 @@ class EquipoController extends Controller
     {
         $equipo = Equipos::find($id);
 
+        //Metodo para eliminar un registro.
         $equipo->delete();
 
         return redirect()->route('equipos.index')->with('success', 'Equipo Eliminado');

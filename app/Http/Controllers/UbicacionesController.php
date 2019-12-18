@@ -9,6 +9,7 @@ class UbicacionesController extends Controller
 {
     public function index()
     {
+        //Variable temporal para almacenar equipos filtrados.
         $data = [
             "1" => [],
             "2" => [],
@@ -20,6 +21,7 @@ class UbicacionesController extends Controller
             "8" => [],
         ];
 
+        //Arreglo auxiliar para control de los nombres de las sedes.
         $sedeValues = [
             "1" => "Azuero",
             "2" => "Bocas del Toro",
@@ -31,6 +33,7 @@ class UbicacionesController extends Controller
             "8" => "Veraguas",
         ];
 
+        //FIltro para obtener los equipos en relacion con una persona.
         foreach($data as $key => $val){
             $temp =  DB::table('equipos')
             ->join('sedes', 'sedes.id', 'equipos.sede')
