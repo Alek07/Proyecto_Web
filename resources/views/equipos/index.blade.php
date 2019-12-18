@@ -33,7 +33,7 @@
                 <hr>
                 <br>
                 <table class="table table-hover">
-                    <thead>
+                    <thead class="bg-primary text-white">
                         <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Codigo</th>
@@ -44,7 +44,7 @@
                     </thead>
                     <tbody>
                         @foreach($equipos as $row)
-                        <tr onclick="location.href='{{action('EquipoController@show', $row['id'])}}'">
+                        <tr onclick="location.href='{{action('EquipoController@show', $row['id'])}}'" style="cursor: pointer">
                             <td>{{$row['nombre']}}</td>
                             <td>{{$row['code']}}</td>
                             <td>{{$row['persona']}}</td>

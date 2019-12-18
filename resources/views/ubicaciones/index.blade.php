@@ -16,7 +16,7 @@
                         @foreach($sedeValues as $key => $value)
                             @if($sedes == $key)
                                 <div data-toggle="collapse" data-target="{{$target = str_replace(' ', '', '#'.$value)}}" aria-expanded="true" aria-controls="collapseOne">
-                                    {{{'Centro Regional de '.$value}}}
+                                    <h3>{{{'Centro Regional de '.$value}}}</h3>
                                 </div>
                             @endif
                         @endforeach
@@ -32,10 +32,10 @@
                                     <table class="table table-hover">
                                         <tbody>
                                             @foreach($sede as $info)
-                                                <tr onclick="location.href='{{action('EquipoController@show', $info->id)}}'">
-                                                    <td>{{$info->nombre}}</td>
-                                                    <td>{{$info->code}}</td>
-                                                    <td>{{$info->persona}}</td>
+                                                <tr onclick="location.href='{{action('EquipoController@show', $info->id)}}'" style="cursor: pointer">
+                                                    <td class="h4">{{$info->nombre}}</td>
+                                                    <td class="h4">{{$info->code}}</td>
+                                                    <td class="h4">{{$info->persona}}</td>
                                                     @if($info->availability == 1)
                                                         <td>
                                                             <h4>
