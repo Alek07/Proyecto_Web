@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SIC UTP</title>
+    <title>Inventario SIC UTP</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     <img src="/assets/img/logo_sic.png" style="height: 50px" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -58,7 +58,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar sesion') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -72,9 +72,17 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 mb-5">
             @yield('content')
         </main>
+
+        <div class="fixed-bottom bg-light border-top d-flex flex-column justify-content-center" style="height: 60px">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <h5>© Desarrollado por Checkpoint</h5>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
