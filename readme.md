@@ -34,7 +34,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 - Move to the project directory.
 - Run command on terminal *composer install*.
-- Run command on temrinal *npm install*.
+- Run command on terminal *npm install*.
 
 On root directory create .env file.
 
